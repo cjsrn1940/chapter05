@@ -61,21 +61,6 @@ public class Ex01 {
 			
 			pFw.write(data);
 		}
-	
-			
-	
-//		
-//		int data;
-//		System.out.println("복사시작");
-//		while(true) {
-//			data = bin.read();
-//			if(data == -1) {
-//				System.out.println("복사끝: " + data);
-//				break;
-//			}
-//			
-//			bout.write(data);
-//		}
 		
 		pBr.close();
 		pFw.close();
