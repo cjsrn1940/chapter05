@@ -48,7 +48,7 @@ public class Ex01 {
 		pList.add(myP);
 		
 		for(Person pp : pList) {
-			System.out.print(pp.write());
+			System.out.println(pp.write());
 		}
 		
 		
@@ -58,12 +58,12 @@ public class Ex01 {
 			if(data == null) {
 				break;
 			}
-			
-			pFw.write(data);
+			pBw.write(data);
+			pBw.newLine();
 		}
 		
 		pBr.close();
-		pFw.close();
+		pBw.close();
 		
 		
 	}

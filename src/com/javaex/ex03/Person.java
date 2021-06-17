@@ -45,7 +45,7 @@ public class Person {
 	}
 	
 	public String write() {
-		return name + "," + hp + "," + company + "\n";
+		return name + "," + hp + "," + company;
 	}
 	
 
