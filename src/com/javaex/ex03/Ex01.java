@@ -16,12 +16,12 @@ public class Ex01 {
 	
 	public static void main(String[] args) throws IOException {
 		
-		InputStream pIn = new FileInputStream("C:\\javaStudy\\file\\PhoneDB_원본.txt");
-		InputStreamReader pIsr = new InputStreamReader(pIn);
-		BufferedReader pBr = new BufferedReader(pIsr);
+		InputStream is = new FileInputStream("C:\\javaStudy\\file\\PhoneDB_원본.txt");
+		InputStreamReader isr = new InputStreamReader(is);
+		BufferedReader br = new BufferedReader(isr);
 		
-		Writer pFw = new FileWriter("C:\\javaStudy\\file\\PhoneDB.txt");
-		BufferedWriter pBw = new BufferedWriter(pFw);
+		Writer fw = new FileWriter("C:\\javaStudy\\file\\PhoneDB.txt");
+		BufferedWriter bw = new BufferedWriter(fw);
 		
 		List<Person> pList = new ArrayList<Person>();
 		
@@ -30,7 +30,7 @@ public class Ex01 {
 		String name, hp, company;
 		
 		while(true) {
-			line = pBr.readLine();
+			line = br.readLine();
 			if(line == null) {
 				break;
 			}
@@ -58,12 +58,12 @@ public class Ex01 {
 			if(data == null) {
 				break;
 			}
-			pBw.write(data);
-			pBw.newLine();
+			bw.write(data);
+			bw.newLine();
 		}
 		
-		pBr.close();
-		pBw.close();
+		br.close();
+		bw.close();
 		
 		
 	}
